@@ -6,6 +6,8 @@
 
 body{
   background-color: #F4F9FD;
+  font-family: 'Roboto', sans-serif;
+  color: #33475B;
 }
 
 .box{
@@ -27,6 +29,53 @@ nav:first-child{
 
 nav:last-of-type{
   background-color: white;
+}
+
+nav *{
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  vertical-align: top;
+}
+
+nav span, nav a{
+  margin: 0 15px;
+  display: inline-block;
+  text-decoration: none;
+  color: #33475B;
+}
+
+#vl{
+  height: 20%;
+  border-left: 1.5px solid #33475B;
+  display: inline-block;
+  margin-left: 15px;
+}
+
+nav button, .fa-search{
+  float: right;
+}
+
+nav button{
+  margin-left: 15px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.fa-search{
+  color: #00A4BD;
+}
+
+button[name=login]{
+  color: #FE775A;
+  background-color: white;
+  border: 1px solid #FE775A;
+}
+
+button[name=get]{
+  color: white;
+  background-color: #FE775A;
+  border: none;
 }
 
 /* Header */
