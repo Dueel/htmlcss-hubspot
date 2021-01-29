@@ -31,7 +31,7 @@ nav:last-of-type{
   background-color: white;
 }
 
-nav *{
+nav *:not(ul *){
   position: relative;
   top: 50%;
   transform: translateY(-50%);
@@ -76,6 +76,28 @@ button[name=get]{
   color: white;
   background-color: #FE775A;
   border: none;
+}
+
+nav img{
+  width: 120px;
+}
+
+nav ul{
+  float: right;
+}
+
+nav ul li{
+  display: inline-block;
+  margin-left: 15px;
+}
+
+li a{
+  font-weight: 500;
+  margin: 0;
+}
+
+ul .fas{
+  margin-left: 10px;
 }
 
 /* Header */
