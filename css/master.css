@@ -86,9 +86,12 @@ nav ul{
   float: right;
 }
 
+nav ul li{
+  margin-left: 15px;
+}
+
 ul li{
   display: inline-block;
-  margin-left: 15px;
 }
 
 li a{
@@ -133,8 +136,8 @@ header h1{
   font-size: 50px;
 }
 
-header p{
-  line-height: 2em;
+p{
+  line-height: 1.6em;
   margin: 30px 0;
 }
 
@@ -188,7 +191,6 @@ img[alt=cube]{
 .horizontal>p{
   width: 70%;
   font-weight: 500;
-  line-height: 2em;
   margin: 30px auto;
 }
 
@@ -213,7 +215,7 @@ img[alt=cube]{
   margin-bottom: 20px;
 }
 
-.contained h3{
+h3{
   font-size: 20px;
 }
 
@@ -245,16 +247,40 @@ li .fa-check-circle{
 
 #first aside{
   width: 30%;
+  background-color: white;
   border-radius: 5px;
   box-shadow: 0 0 5px lightgrey;
+  text-align: center;
+  padding: 20px 25px;
   float: left;
-  /* debug */
-  height: 600px;
-  background-color: white;
 }
 
 #first aside:nth-of-type(2){
   margin: 0 5%;
+}
+
+#first aside img{
+  height: 100px;
+}
+
+#first aside ul{
+  text-align: left;
+}
+
+#first aside li{
+  display: block;
+}
+
+#first aside h3, #first aside p, #first aside h4, #first aside ul{
+  margin: 20px 0;
+}
+
+#first aside hr{
+  margin-top: 60px;
+}
+
+#first aside button{
+  margin-top: 30px;
 }
 
 #second{
