@@ -86,7 +86,7 @@ nav ul{
   float: right;
 }
 
-nav ul li{
+ul li{
   display: inline-block;
   margin-left: 15px;
 }
@@ -96,7 +96,7 @@ li a{
   margin: 0;
 }
 
-ul .fas{
+ul .fa-chevron-down{
   margin-left: 10px;
 }
 
@@ -138,7 +138,7 @@ header p{
   margin: 30px 0;
 }
 
-header button{
+ button{
   padding: 20px 40px;
   border-radius: 5px;
 }
@@ -158,19 +158,98 @@ section{
 .horizontal{
   margin: 20px 0;
   border-radius: 5px;
-  /* debug */
-  height: 300px;
-  border: 1px solid grey;
+}
+
+.horizontal::after{
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.horizontal:first-child{
+  text-align: center;
+}
+
+.horizontal:nth-of-type(2){
+  padding: 60px 0;
   background-color: white;
+  box-shadow: 0 0 5px lightgrey;
+}
+
+img[alt=cube]{
+  width: 300px;
+  margin-top: 20px;
+}
+
+.horizontal h2{
+  font-size: 30px;
+}
+
+.horizontal>p{
+  width: 70%;
+  font-weight: 500;
+  line-height: 2em;
+  margin: 30px auto;
+}
+
+.contained{
+  display: inline-block;
+  float: left;
+}
+
+.contained:first-child{
+  width: 20%;
+  margin-left: calc((100% - 75%) / 3);
+  text-align: center;
+}
+
+.contained:last-child{
+  width: 55%;
+  margin: 0 calc((100% - 75%) / 3);
+}
+
+.contained img{
+  width: 125px;
+  margin-bottom: 20px;
+}
+
+.contained h3{
+  font-size: 20px;
+}
+
+.contained p{
+  margin: 25px 0 20px;
+}
+
+.contained hr{
+  width: 350px;
+  border-top: 2px solid lightgrey;
+  float: right;
+  display: inline-block;
+  position: relative;
+  top: 7px;
+}
+
+.contained h4{
+  display: inline-block;
+}
+
+.contained li{
+  margin: 25px 20px 0 0;
+}
+
+li .fa-check-circle{
+  margin-right: 15px;
+  color: #FE775A;
 }
 
 #first aside{
   width: 30%;
   border-radius: 5px;
+  box-shadow: 0 0 5px lightgrey;
   float: left;
   /* debug */
   height: 600px;
-  border: 1px solid grey;
   background-color: white;
 }
 
