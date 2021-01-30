@@ -38,7 +38,7 @@ nav *:not(ul *){
   vertical-align: top;
 }
 
-nav span, nav a{
+nav span, a{
   margin: 0 15px;
   display: inline-block;
   text-decoration: none;
@@ -179,7 +179,7 @@ img[alt=cube]{
   margin-top: 20px;
 }
 
-.horizontal h2{
+h2{
   font-size: 30px;
 }
 
@@ -344,13 +344,33 @@ li .fa-check-circle{
   font-weight: 300;
 }
 
-#third aside{
-  width: 50%;
-  float: left;
-  /* DEBUG:*/
-  height: 400px;
-  border: 1px solid grey;
-  background-color: white;
+#third .box{
+  position: relative;
+}
+
+#partners{
+  width: 55%;
+}
+
+#third h1{
+  font-size: 40px;
+}
+
+.logos{
+  width: 60%;
+  position: absolute;
+  top: 30px;
+  right: 0;
+}
+
+.logos img{
+  width: 100px;
+  vertical-align: middle;
+  margin: 10px;
+}
+
+#third h1+p{
+  width: 200px;
 }
 
 section::after{
@@ -359,9 +379,22 @@ section::after{
   clear: both;
 }
 
+#cta{
+  width: 40%;
+  margin: 50px 0;
+  display: inline-block;
+}
+#cta+img{
+  margin: 40px 0;
+  height: 350px;
+  float: right;
+}
+
 /* Footer */
 footer{
+  color: white;
   background-color: #33475B;
+  padding: 20px 0;
 }
 
 footer aside{
@@ -369,8 +402,20 @@ footer aside{
   float: left;
   /* DEBUG:*/
   height: 400px;
-  border: 1px solid grey;
-  background-color: white;
+}
+
+footer strong{
+  display: inline-block;
+  margin: 15px 0;
+}
+
+footer li{
+  display: block;
+  margin: 15px 0;
+}
+
+footer li a{
+  color: #CAD5E1;
 }
 
 footer:after{
