@@ -400,8 +400,6 @@ footer{
 footer aside{
   width: 25%;
   float: left;
-  /* DEBUG:*/
-  height: 400px;
 }
 
 footer strong{
@@ -416,6 +414,39 @@ footer li{
 
 footer li a{
   color: #CAD5E1;
+}
+
+button[name=contact]{
+  border: none;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.links a{
+  color: #CAD5E1;
+  margin: 10px 20px 0 0;
+}
+
+footer img+.links{
+  display: inline-block;
+  float: right;
+}
+
+#languages{
+  margin: 80px auto 0;
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#languages li{
+  display: inline-block;
+  margin: 0 10px;
+}
+
+footer hr{
+  margin: 20px 0 40px;
 }
 
 footer:after{
