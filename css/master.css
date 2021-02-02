@@ -127,7 +127,7 @@ h5{
 
 p{
   line-height: 1.6em;
-  margin: 10px 0;
+  margin: 20px 0;
 }
 
 .button{
@@ -210,10 +210,6 @@ header .box div{
   display: none;
 }
 
-#hover:hover .hover{
-  display: visible;
-}
-
 .hover>div{
   width: 75%;
 }
@@ -231,6 +227,7 @@ header .box div{
 
 .hover p{
   font-weight: 400;
+  margin-top: 10px;
 }
 
 #hover-left{
