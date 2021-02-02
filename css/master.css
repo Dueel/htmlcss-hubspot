@@ -7,13 +7,9 @@
 
 body{
   font-family: 'Roboto', sans-serif;
+  font-size: 15px;
   font-weight: 500;
   color: #33475B;
-}
-
-/* DEBUG:  */
-header{
-  height: 500px;
 }
 
 nav{
@@ -32,6 +28,7 @@ nav:first-of-type{
 nav:last-of-type{
   margin-top: 70px;
   background-color: white;
+  box-shadow: 0 5px 10px -6px rgba(51,71,91,0.2);
 }
 
 header{
@@ -71,7 +68,6 @@ footer{
 .box{
   width: 65%;
   margin: 0 auto;
-  /* DEBUG:  */
   height: 100%;
 }
 
@@ -119,12 +115,19 @@ h3{
 }
 
 h4{
+  font-size: 1.2em;
   margin: 20px 0;
+}
+
+h5{
+  font-size: 1.2em;
+  font-weight: 500;
+  display: inline-block;
 }
 
 p{
   line-height: 1.6em;
-  margin: 20px 0;
+  margin: 10px 0;
 }
 
 .button{
@@ -141,7 +144,7 @@ p{
 }
 
 /* SPECIFIC RULES */
-nav .box>*{
+nav .box>*:not(.hover){
   display: inline-block;
   position: relative;
   top: 50%;
@@ -193,6 +196,94 @@ header .box div{
   font-size: 14px;
   font-weight: 400;
   display: block;
+}
+
+.hover{
+  width: 65%;
+  height: 400px;
+  background-color: white;
+  border-radius: 5px;
+  border: 0.5px solid #0b99ba;
+  margin: 0 auto;
+  position: absolute;
+  top: 100%;
+  display: none;
+}
+
+#hover:hover .hover{
+  display: visible;
+}
+
+.hover>div{
+  width: 75%;
+}
+
+.hover div{
+  display: inline-block;
+  float: left;
+}
+
+.hover a{
+  color: #0b99ba;
+  font-weight: 400;
+  line-height: 1.5em;
+}
+
+.hover p{
+  font-weight: 400;
+}
+
+#hover-left{
+  width: 25%;
+  height: 100%;
+  background-color: #F4F9FD;
+  padding: 30px 25px;
+}
+
+#hover-left a{
+  width: 50%;
+  display: block;
+  margin: 15px 0 30px;
+}
+
+#hover-right{
+  height: 75%;
+}
+
+#hover-right h5{
+  margin-top: 15px;
+}
+
+.software-tab{
+  width: 40%;
+  height: 40%;
+  margin-top: 20px;
+  margin-top: calc(20% / 3);
+  margin-left: calc(20% / 3);
+  border-radius: 5px;
+}
+
+.software-tab:hover{
+  box-shadow: 0 0 5px lightgrey;
+}
+
+.hover-img{
+  width: 15%;
+  height: 100%;
+  padding: 5px;
+}
+
+.hover-text{
+  width: 85%;
+  height: 100%;
+  padding: 0 10px;
+}
+
+.square{
+  width: 100%;
+  padding-top: 100%;
+  background-color: lightgrey;
+  border-radius: 5px;
 }
 
 /* SECTIONS */
@@ -259,6 +350,7 @@ header .box div{
 
 #hubs aside img{
   height: 100px;
+  margin-bottom: 20px;
 }
 
 #hubs hr{
