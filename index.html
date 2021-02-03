@@ -13,23 +13,30 @@
     <!-- FIRST NAV -->
     <nav>
       <div class="box">
-        <span>
-          <i class="fas fa-globe-europe"></i>
-          <a href="#">&nbsp;English<i class="fas fa-chevron-down"></i></a>
-          &nbsp; &#124; &nbsp;
-          <a href="#">Contact Us</a>
-        </span>
-        <a href="#" id="get">GetHubspotFree</a>
-        <a href="#" id="login">Log In</a>
-        <a href="#"><i class="fas fa-search"></i></a>
+
+        <ul class="ul-inline float-left">
+          <span>
+            <i class="fas fa-globe-europe"></i>
+            <a href="#">&nbsp;English<i class="fas fa-chevron-down"></i></a>
+            &nbsp; &#124; &nbsp;
+            <a href="#">Contact Us</a>
+          </span>
+        </ul>
+        <ul class="ul-inline float-right">
+          <a href="#"><i class="fas fa-search"></i></a>
+          <a href="#" id="login">Log In</a>
+          <a href="#" id="get">GetHubspotFree</a>
+        </ul>
+
       </div>
     </nav>
 
     <!-- SECOND NAV -->
     <nav>
       <div class="box">
+
         <img src="img/logo.svg" alt="">
-        <ul class="ul-inline">
+        <ul class="ul-inline float-right">
           <li  id="hover"><a href="#">Software<i class="fas fa-chevron-down"></i></a></li>
           <li><a href="#">Pricing</a></li>
           <li><a href="#">Resources<i class="fas fa-chevron-down"></i></a></li>
@@ -38,14 +45,14 @@
         </ul>
 
         <div class="hover">
-          <div id="hover-left">
+          <div class="float-left" id="hover-left">
             <h5>The Full CRM Platform</h5>
             <a href="#">Overview of all products &rarr;</a>
             <h5>Free CRM</h5>
             <a href="#">Overview of HubSpot's free tools &rarr;</a>
           </div>
 
-          <div id="hover-right">
+          <div class="float-left" id="hover-right">
             <div class="software-tab">
               <div class="hover-img">
                 <div class="square"></div>
@@ -113,13 +120,13 @@
           <p>Hubspot offers a full stack of software for marketing, sales and customer service, with a completely free CRM at its core. They're powerful alone - but even better when used togheter.</p>
         </section>
 
-        <section id="learn-more">
-          <div>
+        <section id="learn-more" class="clearfix">
+          <div class="float-left">
             <img src="img/book.svg" alt="">
             <a href="#" class="button">Learn More</a>
           </div>
 
-          <div id="crm">
+          <div class="float-left" id="crm">
             <h3>Free Hubspot CRM</h3>
             <p>Everything you nedd to organize, track, and build better relatioships with leads and customers. Yes, it's 100% free. Forever.</p>
             <h4>POPULAR FEATURES</h4>
@@ -131,8 +138,8 @@
           </div>
         </section>
 
-        <section id="hubs">
-          <aside>
+        <section id="hubs" class="clearfix">
+          <aside class="float-left">
             <img src="img/marketing.svg" alt="">
             <h3>Marketing Hub</h3>
             <p>Marketing software to help you grow traffic, convert more visitors, and run complete inbound marketing campaigns at scale.</p>
@@ -146,7 +153,7 @@
             <a href="#" class="button">Learn More</a>
           </aside>
 
-          <aside>
+          <aside class="float-left">
             <img src="img/sales.svg" alt="">
             <h3>Sales Hub</h3>
             <p>Time-saving software that helps you get deeper insight into prospects, automate the tasks you hate, and close more deals faster.</p>
@@ -160,7 +167,7 @@
             <a href="#" class="button">Learn More</a>
           </aside>
 
-          <aside>
+          <aside class="float-left">
             <img src="img/service.svg" alt="">
             <h3>Service Hub</h3>
             <p>Customer service software to help you connect with customers, exceed expectation, and turn them into promoters that grow your business.</p>
@@ -178,91 +185,96 @@
     </main>
 
     <!-- TABLE -->
-    <section id="table">
+    <section id="table" class="clearfix">
       <div class="box">
         <h2>Learn and grow with award-winning support and a thriving community behind you.</h2>
         <p>You don't have to go it alone. Master the inbound methodology and get the most out of your tools with Hubspot's legendary customer support team and a community of thousands of marketing and sales pros just like you.</p>
 
-        <div class="tab bottom-b right-b">
-          <div class="container">
-            <img src="img/homepage_community_agency.svg" alt="">
-            <span class="data">150</span><span class="plus">+</span>
-            <span class="description">Hubspot user groups</span>
+        <div class="row">
+          <div class="tab float-left">
+            <div class="container">
+              <img src="img/homepage_community_agency.svg" alt="">
+              <span class="data">150</span><span class="plus">+</span>
+              <span class="description">Hubspot user groups</span>
+            </div>
+          </div>
+          <div class="tab float-left">
+            <div class="container">
+              <img src="img/homepage_community_blog.svg" alt="">
+              <span class="data">4.5M</span><span class="plus">+</span>
+              <span class="description">monthly visits</span>
+            </div>
+          </div>
+          <div class="tab float-left">
+            <div class="container">
+              <img src="img/homepage_community_academy.svg" alt="">
+              <span class="data">155K</span><span class="plus">+</span>
+              <span class="description">certified professionals</span>
+            </div>
+          </div>
+          <div class="tab float-left">
+            <div class="container">
+              <img src="img/homepage_community_inbound.svg" alt="">
+              <span class="data">21K</span><span class="plus">+</span>
+              <span class="description">registered attendees</span>
+            </div>
           </div>
         </div>
-        <div class="tab bottom-b right-b">
-          <div class="container">
-            <img src="img/homepage_community_blog.svg" alt="">
-            <span class="data">4.5M</span><span class="plus">+</span>
-            <span class="description">monthly visits</span>
+        <div class="row">
+          <div class="tab float-left">
+            <div class="container">
+              <img src="img/homepage_community_connect.svg" alt="">
+              <span class="data">200</span><span class="plus">+</span>
+              <span class="description">integrations</span>
+            </div>
+          </div>
+          <div class="tab float-left">
+            <div class="container">
+              <img src="img/homepage_community_globe.svg" alt="">
+              <span class="data">6</span><span class="plus">+</span>
+              <span class="description">languages</span>
+            </div>
+          </div>
+          <div class="tab float-left">
+            <div class="container">
+              <img src="img/homepage_community_followers.svg" alt="">
+              <span class="data">2.6M</span><span class="plus">+</span>
+              <span class="description">social followers</span>
+            </div>
+          </div>
+          <div class="tab float-left">
+            <div class="container">
+              <img src="img/growthhub-white-small-1.svg" alt="">
+              <span class="data">5K</span><span class="plus">+</span>
+              <span class="description">profiles and counting</span>
+            </div>
           </div>
         </div>
-        <div class="tab bottom-b right-b">
-          <div class="container">
-            <img src="img/homepage_community_academy.svg" alt="">
-            <span class="data">155K</span><span class="plus">+</span>
-            <span class="description">certified professionals</span>
-          </div>
-        </div>
-        <div class="tab bottom-b">
-          <div class="container">
-            <img src="img/homepage_community_inbound.svg" alt="">
-            <span class="data">21K</span><span class="plus">+</span>
-            <span class="description">registered attendees</span>
-          </div>
-        </div>
-        <div class="tab right-b">
-          <div class="container">
-            <img src="img/homepage_community_connect.svg" alt="">
-            <span class="data">200</span><span class="plus">+</span>
-            <span class="description">integrations</span>
-          </div>
-        </div>
-        <div class="tab right-b">
-          <div class="container">
-            <img src="img/homepage_community_globe.svg" alt="">
-            <span class="data">6</span><span class="plus">+</span>
-            <span class="description">languages</span>
-          </div>
-        </div>
-        <div class="tab right-b">
-          <div class="container">
-            <img src="img/homepage_community_followers.svg" alt="">
-            <span class="data">2.6M</span><span class="plus">+</span>
-            <span class="description">social followers</span>
-          </div>
-        </div>
-        <div class="tab">
-          <div class="container">
-            <img src="img/growthhub-white-small-1.svg" alt="">
-            <span class="data">5K</span><span class="plus">+</span>
-            <span class="description">profiles and counting</span>
-          </div>
-        </div>
+
       </div>
     </section>
 
     <!-- CUSTOMERS -->
-    <section class="box">
-        <div id="customers">
-          <h1>64,500</h1>
-          <p>customer in over <strong>100</strong> countries growing their business with HubSpot</p>
-        </div>
+    <section class="box clearfix">
+      <div class="float-left" id="customers">
+        <h1>64,500</h1>
+        <p>customer in over <strong>100</strong> countries growing their business with HubSpot</p>
+      </div>
 
-        <div id="logos">
-          <img src="img/atlassian.png" alt="">
-          <img src="img/doordash.png" alt="">
-          <img src="img/g2crowd-logo@2x.png" alt="">
-          <img src="img/purple-logo@2x.png" alt="">
-          <img src="img/subaru.png" alt="">
-          <img src="img/wistia.png" alt="">
-          <img src="img/classpass.png" alt="">
-          <img src="img/vmware.png" alt="">
-        </div>
+      <div class="float-left" id="logos">
+        <img src="img/atlassian.png" alt="">
+        <img src="img/doordash.png" alt="">
+        <img src="img/g2crowd-logo@2x.png" alt="">
+        <img src="img/purple-logo@2x.png" alt="">
+        <img src="img/subaru.png" alt="">
+        <img src="img/wistia.png" alt="">
+        <img src="img/classpass.png" alt="">
+        <img src="img/vmware.png" alt="">
+      </div>
     </section>
 
     <section class="box">
-      <div id="cta">
+      <div class="float-left" id="cta">
         <h2>Start Growing With Hubspot Today</h2>
         <p>With tools to make every part of your process more human and a support team excited to help you, getting started with inbound has never been easier.</p>
         <a href="#" class="button">GetHubspotFree</a>
@@ -272,9 +284,9 @@
     </section>
 
     <!-- FOOTER -->
-    <footer>
+    <footer class="clearfix">
       <div class="box">
-        <aside>
+        <aside class="float-left">
           <strong>Increase Your Traffic</strong>
           <ul class="ul-block">
             <li><a href="#">Ad Software</a></li>
@@ -284,7 +296,7 @@
             <li><a href="#">Content Management System</a></li>
           </ul>
         </aside>
-        <aside>
+        <aside class="float-left">
           <strong>Connect With Leads</strong>
           <ul class="ul-block">
             <li><a href="#">Find New Prospects</a></li>
@@ -294,7 +306,7 @@
             <li><a href="#">Email Marketing</a></li>
           </ul>
         </aside>
-        <aside>
+        <aside class="float-left">
           <strong>Close and Manage Leads</strong>
           <ul class="ul-block">
             <li><a href="#">Document Tracking Tool</a></li>
@@ -304,7 +316,7 @@
             <li><a href="#">Pipeline Management Tool</a></li>
           </ul>
         </aside>
-        <aside>
+        <aside class="float-left">
           <strong>Support and Tools</strong>
           <ul class="ul-block">
             <li><a href="#">HubSpot Partners</a></li>
@@ -355,5 +367,4 @@
 - il margine dei p puó essere centralizzato?
 - e i bordi?
 - nav in position fixed
-- hover sui button
  -->
